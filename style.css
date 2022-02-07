@@ -41,26 +41,27 @@
         font-size: 15px;
         font-weight: bold;
         text-align: center;
-        background-color: rgb(45, 82, 99);
+        background-color: #BD5F71;
         color: white;
         cursor: pointer;
-        border: solid 2px rgb(45, 82, 99);
+        border: solid 3px #BD5F71;
         transition: all 0.3s;
     }
 
     button:hover {
         transform: scale(1.05);
         background-color: transparent;
-        color: rgb(45, 82, 99);
+        color: white;
         font-weight: bold;
         font-size: 16px;
+        border: solid 3px white;
     }
 
     h1 {
         text-align: center;
-        text-shadow: 1px 1px 2px grey;
+        text-shadow: 1px 1px 2px black;
         font-size: 50px;
-        color: rgb(45, 82, 99);
+        color: white;
     }
 
     #divInfo {
@@ -74,10 +75,10 @@
 
     p#cityName {
         text-align: center;
-        font-size: 30px;
+        font-size: 40px;
         font-weight: bold;
-        color: rgb(45, 82, 99);
-        text-shadow: 1px 1px 2px grey;
+        color: #BD5F71;
+        text-shadow: 1px 1px 2px black;
         padding-top: 30px;
         margin-bottom: 0;
     }
