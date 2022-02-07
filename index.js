@@ -51,12 +51,12 @@ const weather = async () => {
 const weatherMain = (json) => {
         p1Main.nodeValue = `${json.weather[0].main}:`;
         p2Description.nodeValue = json.weather[0].description;
-        p3Temp.nodeValue = `Temperature: ${json.main.temp}°C`;
+        p3Temp.nodeValue = `${json.main.temp}°C`;
         p4TempMin.nodeValue = `Temperature min: ${json.main.temp_min}°C`;
         p5TempMax.nodeValue = `Temperature max: ${json.main.temp_max}°C`;
-        city.nodeValue = `${json.name}`;
-        img.src = `/workshop3.2/icons black/${json.weather[0].icon}.png`;
+        city.nodeValue = `${json.name}, ${json.sys.country}`;
+        img.src = `/workshop3.2/icons white/${json.weather[0].icon}.png`;
     
-        divInfo.append(cityName, img, p1, p2, p3, p4, p5); 
+        divInfo.append(cityName, p3, p1, p2, img, p4, p5); 
 }
 
